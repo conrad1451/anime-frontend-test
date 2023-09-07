@@ -12,7 +12,7 @@ function App() {
       <ToastContainer></ToastContainer>
       <Router>
         <Routes>
-          <Route path="/" exact element={<SignIn />} />
+          <Route path="/" element={<SignIn />} />
           {/* other routes */}
 
           <Route path="" element={<Layout />}>

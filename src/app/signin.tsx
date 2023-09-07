@@ -88,7 +88,7 @@ const SignIn = () => {
 										onChange={() => setErrMsg("")}
 									/>
 									{errors && errors?.username && (
-										<p className="text-red-600 text-xs">{errors.username?.message}</p>
+										<p className="text-red-600 text-xs">{"Invalid username"}</p>
 									)}
 								</div>
 
@@ -107,7 +107,7 @@ const SignIn = () => {
 										onChange={() => setErrMsg("")}
 									/>
 									{errors && errors?.username && (
-										<p className="text-red-600 text-xs">{errors.email?.message}</p>
+										<p className="text-red-600 text-xs">{"Invalid email"}</p>
 									)}
 								</div>
 
@@ -141,7 +141,7 @@ const SignIn = () => {
 										</div>
 									</div>
 									{errors && errors?.password && (
-										<p className="text-red-600 text-xs">{errors.password?.message}</p>
+										<p className="text-red-600 text-xs">{"Invalid password"}</p>
 									)}
 								</div>
 							</div>
