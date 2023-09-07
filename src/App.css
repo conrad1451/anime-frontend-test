@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-rgb-255-205-153, .bg-rgb-255-205-153:hover {
+  background-color: rgb(255, 205, 153);
+}
+
+.bg-rgb-207-61-12 {
+  background-color: rgb(207, 61, 12);
+}
+
+.bg-rgb-207-61-12:hover {
+  background-color: rgb(207, 61, 12);
+  opacity: 0.5;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.pagination-container {
+  float: left;
+}
+
+/* FLIP CARD */
+.flip-card {
+  background-color: transparent;
+  width: 25vmin;
+  height: 25vmin;
+  perspective: 1000px;
+  margin-left: 10vmin;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  /* width: 100%; */
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  background-color: rgb(229, 231, 235);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  /* display: inline; */
+}
+
+.flip-card-front {
+  background-color: antiquewhite;
+  /* background-color: #2980b9; */
+  color: black;
+  text-align: center;
+}
+
+.flip-card-back {
+  background-color: #daac7e;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
