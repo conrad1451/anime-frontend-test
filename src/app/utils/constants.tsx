@@ -1,4 +1,4 @@
-export const API_BASE_URL = `http://localhost:8002/api/`
+export const API_BASE_URL = `https://anime-backend-z9eb.onrender.com/api/`
 export const GET_TOKEN_ENDPOINT = API_BASE_URL + "oauth/token"
 export const REFRESH_TOKEN_ENDPOINT = API_BASE_URL + "oauth/token"
 export const ADD_TO_FAVORITES = API_BASE_URL + "user/favorites"
