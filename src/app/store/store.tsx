@@ -46,6 +46,8 @@ const store = (set: any) => ({
     // entered correspond to an actual user in the database 
     signIn: async (email: string, username: string, password : string) => {
         try {
+            // CHQ: I would add a breakpoint on the line below, because this is where
+            // communication with the backend occurs
             const data = await getToken(email, password);
             console.log("data response from store:", data)
             set({ accessToken: data.access_token, refreshToken: data.refresh_token});
