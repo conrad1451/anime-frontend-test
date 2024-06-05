@@ -25,7 +25,13 @@ const SignIn = () => {
 		formState: { errors, isSubmitting }	} = useForm({ mode: "onChange", reValidateMode: "onChange" })
 
 	const onSubmit = async (data) => {
+
+		// CHQ: Here we print the details that the user has entered to the console.
 		console.log({ email: data.email, username: data.username, password: data.password })
+
+		// CHQ: Here we pass in the details that the user has entered "signIn". This function returns 
+		// a promise that is resolved as either a success (user authenticated, successful login) or 
+		// failure (user not authenticated, invalid login)
 		const res = await signIn(data.email, data.username, data.password)
 		console.log(res)
 
