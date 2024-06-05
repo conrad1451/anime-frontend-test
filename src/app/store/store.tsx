@@ -43,7 +43,7 @@ const store = (set: any) => ({
 
     // authenticate
     // CHQ: This is where the frontend app communicates with the backend API to see if the credentials
-    // entered correspond to an actual user in the database
+    // entered correspond to an actual user in the database 
     signIn: async (email: string, username: string, password : string) => {
         try {
             const data = await getToken(email, password);
