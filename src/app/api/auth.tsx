@@ -12,6 +12,7 @@ export const getToken = async (email: string, password: string) => {
 	formData.append('username', email);
 	formData.append('password', password);
 
+	// CHQ: I found where the environmental variables are called. Success.
 	const response = await axios
 		.post(c.GET_TOKEN_ENDPOINT
 			, formData.toString(), axiosConfig)
